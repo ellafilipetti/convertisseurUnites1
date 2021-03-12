@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OngletController">
+   <children>
+      <TabPane prefHeight="450.0" prefWidth="550.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Acceuil">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="173.0" prefWidth="215.0">
+                     <children>
+                        <Text fx:id="txtBienvenue" layoutX="94.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur mon application">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnSortie" layoutX="426.0" layoutY="314.0" mnemonicParsing="false" text="Sortie" />
+                        <Text fx:id="txtAcceuil" layoutX="89.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="un convertisseur d'unités où vous pouvez convertir des mesurments de tout type, et les unités métriques en unités impériales." wrappingWidth="371.49560546875" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Longeur">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtLongeur1" layoutX="70.0" layoutY="150.0" />
+                        <TextField fx:id="txtLongeur2" layoutX="300.0" layoutY="150.0" />
+                        <ComboBox fx:id="cboLongeur1" layoutX="70.0" layoutY="176.0" prefHeight="27.0" prefWidth="167.0" />
+                        <ComboBox fx:id="cboLongeur2" layoutX="300.0" layoutY="176.0" prefHeight="27.0" prefWidth="167.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Volume">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtVolume1" layoutX="70.0" layoutY="150.0" />
+                        <TextField fx:id="txtVolume2" layoutX="300.0" layoutY="150.0" />
+                        <ComboBox fx:id="cboVolume1" layoutX="70.0" layoutY="176.0" prefHeight="27.0" prefWidth="167.0" />
+                        <ComboBox fx:id="cboVolume2" layoutX="300.0" layoutY="176.0" prefHeight="27.0" prefWidth="167.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Surface">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="cboSurface1" layoutX="70.0" layoutY="176.0" prefHeight="27.0" prefWidth="167.0" />
+                        <ComboBox fx:id="cboSurface2" layoutX="300.0" layoutY="176.0" prefHeight="27.0" prefWidth="167.0" />
+                        <TextField fx:id="txtSurface1" layoutX="70.0" layoutY="150.0" />
+                        <TextField fx:id="txtSurface2" layoutX="300.0" layoutY="150.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Masse">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtMasse1" layoutX="70.0" layoutY="150.0" />
+                        <TextField fx:id="txtMasse2" layoutX="300.0" layoutY="150.0" />
+                        <ComboBox fx:id="cboMasse1" layoutX="70.0" layoutY="176.0" prefHeight="27.0" prefWidth="166.0" />
+                        <ComboBox fx:id="cboMasse2" layoutX="300.0" layoutY="176.0" prefHeight="27.0" prefWidth="166.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
